@@ -2,5 +2,8 @@
   "github": {
     "enabled": true,
     "silent": true
+  },
+  "deploymentProtection": {
+    "vercelBasicAuthentication": false
   }
 }
