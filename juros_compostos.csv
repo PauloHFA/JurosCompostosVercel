@@ -1,0 +1,24 @@
+PLANILHA DE JUROS COMPOSTOS;;;
+;;;
+VALOR INICIAL (R$):;1000;;Digite o valor inicial aqui
+TAXA DE JUROS (% ao mês):;1;;Digite a taxa mensal aqui
+PERÍODO (meses):;12;;Digite quantos meses
+;;;
+MÊS;SALDO INICIAL;JUROS;SALDO FINAL
+0;=B3;0;=B3
+1;=D3;=B4*(B4/100);=B4+C4
+2;=D4;=B5*(B4/100);=B5+C5
+3;=D5;=B6*(B4/100);=B6+C6
+4;=D6;=B7*(B4/100);=B7+C7
+5;=D7;=B8*(B4/100);=B8+C8
+6;=D8;=B9*(B4/100);=B9+C9
+7;=D9;=B10*(B4/100);=B10+C10
+8;=D10;=B11*(B4/100);=B11+C11
+9;=D11;=B12*(B4/100);=B12+C12
+10;=D12;=B13*(B4/100);=B13+C13
+11;=D13;=B14*(B4/100);=B14+C14
+12;=D14;=B15*(B4/100);=B15+C15
+;;;
+TOTAL INVESTIDO:;=B3;;
+TOTAL EM JUROS:;=D15-B3;;
+SALDO FINAL:;=D15;;

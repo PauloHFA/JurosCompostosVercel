@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Juros Compostos</title>
+</head>
+<body>
+<table border="1">
+<tr><th colspan="4" style="background:#4472C4;color:white;font-size:16px;">PLANILHA DE JUROS COMPOSTOS</th></tr>
+<tr><td colspan="4">&nbsp;</td></tr>
+<tr><td><b>VALOR INICIAL (R$):</b></td><td>1000</td><td colspan="2">Digite o valor inicial aqui</td></tr>
+<tr><td><b>TAXA DE JUROS (% ao mês):</b></td><td>1</td><td colspan="2">Digite a taxa mensal aqui</td></tr>
+<tr><td><b>PERÍODO (meses):</b></td><td>12</td><td colspan="2">Digite quantos meses</td></tr>
+<tr><td colspan="4">&nbsp;</td></tr>
+<tr style="background:#D6DCE4;"><th>MÊS</th><th>SALDO INICIAL</th><th>JUROS</th><th>SALDO FINAL</th></tr>
+<tr><td>0</td><td>=B2</td><td>0</td><td>=B2</td></tr>
+<tr><td>1</td><td>=D3</td><td>=B4*($B$3/100)</td><td>=B4+C4</td></tr>
+<tr><td>2</td><td>=D4</td><td>=B5*($B$3/100)</td><td>=B5+C5</td></tr>
+<tr><td>3</td><td>=D5</td><td>=B6*($B$3/100)</td><td>=B6+C6</td></tr>
+<tr><td>4</td><td>=D6</td><td>=B7*($B$3/100)</td><td>=B7+C7</td></tr>
+<tr><td>5</td><td>=D7</td><td>=B8*($B$3/100)</td><td>=B8+C8</td></tr>
+<tr><td>6</td><td>=D8</td><td>=B9*($B$3/100)</td><td>=B9+C9</td></tr>
+<tr><td>7</td><td>=D9</td><td>=B10*($B$3/100)</td><td>=B10+C10</td></tr>
+<tr><td>8</td><td>=D10</td><td>=B11*($B$3/100)</td><td>=B11+C11</td></tr>
+<tr><td>9</td><td>=D11</td><td>=B12*($B$3/100)</td><td>=B12+C12</td></tr>
+<tr><td>10</td><td>=D12</td><td>=B13*($B$3/100)</td><td>=B13+C13</td></tr>
+<tr><td>11</td><td>=D13</td><td>=B14*($B$3/100)</td><td>=B14+C14</td></tr>
+<tr><td>12</td><td>=D14</td><td>=B15*($B$3/100)</td><td>=B15+C15</td></tr>
+<tr><td colspan="4">&nbsp;</td></tr>
+<tr><td><b>TOTAL INVESTIDO:</b></td><td>=B2</td><td colspan="2"></td></tr>
+<tr><td><b>TOTAL EM JUROS:</b></td><td>=D15-B17</td><td colspan="2"></td></tr>
+<tr><td><b>SALDO FINAL:</b></td><td>=D15</td><td colspan="2" style="background:#FFC000;font-weight:bold;"></td></tr>
+</table>
+<p><b>Instruções:</b></p>
+<ul>
+<li>Altere o valor em B2 para seu investimento inicial</li>
+<li>Altere a taxa em B3 (porcentagem ao mês)</li>
+<li>Altere o período em B4 (número de meses)</li>
+<li>Os juros e saldos são calculados automaticamente</li>
+</ul>
+<p><b>Para criar o gráfico:</b></p>
+<ol>
+<li>Selecione as colunas A (Mês) e D (Saldo Final) das linhas 3 a 15</li>
+<li>Insira → Gráfico → Linha ou Dispersão</li>
+<li>O gráfico mostrará o crescimento exponencial do seu investimento!</li>
+</ol>
+</body>
+</html>
